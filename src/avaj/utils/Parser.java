@@ -7,7 +7,7 @@ import java.io.*;
 
 public class Parser {
     public static PrintWriter writer;
-    public static int cycles;
+    public static int cycle;
     private String fileName;
     File resultFile;
     AircraftFactory aircraftFactory = new AircraftFactory();
@@ -32,69 +32,55 @@ public class Parser {
 
     public void parseScenario() {
         try {
-            FileInputStream fstream = new FileInputStream( fileName );
-            BufferedReader br = new BufferedReader( new InputStreamReader( fstream ) );
+            FileInputStream fis = new FileInputStream( fileName );
+            BufferedReader br = new BufferedReader( new InputStreamReader( fis ) );
             String strLine;
             int line = 1;
-            String[] splitted;
+            String[] strSplitted;
 
             while ( ( strLine = br.readLine() ) != null ) {
-                // Checking the first line that must be only 1 parameter as an integer.
                 if ( line == 1 ) {
                     try {
-                        cycles = Integer.parseInt( strLine );
-                        if ( cycles < 0 ) {
-                            System.out.println(
-                                    "Error: first line of scenario file must be a POSITIVE integer." );
-                            return;
+                        cycle = Integer.parseInt( strLine );
+                        if ( cycle < 0 ) {
+                            throw new CustomException( "Error in" + fileName + " : first line of scenario file must be > 0." );
                         }
-                    } catch ( NumberFormatException e ) {
-                        System.out.println( "Error: first line of scenario file must be an integer." );
-                        return;
+                    } catch ( Exception ex ) {
+                        throw new CustomException( "Error: first line in " + fileName + " file must be an integer." );
                     }
-                }
-                // For the other lines, we check for the format <String> <String> <Int> <Int> <Int>
-                else {
-                    splitted = strLine.split( " " );
-                    if ( splitted.length == 1 && splitted[0].isEmpty() ) // Do not consider empty lines
-                    {
+                } else {
+                    strSplitted = strLine.split( " " );
+                    if ( strSplitted.length == 1 && strSplitted[0].isEmpty() ) {
                         continue;
                     }
-                    if ( splitted.length != 5 ) // Check if there are 5 parameters
-                    {
-                        throw new CustomException( "Error: line " + line + ": there must be 5 parameters." );
+                    if ( strSplitted.length != 5 ) {
+                        throw new CustomException( "Error: in " + line + " line: there must be 5 parameters." );
                     }
-
                     try {
                         aircraftFactory.newAircraft(
-                                splitted[0],
-                                splitted[1],
-                                Integer.parseInt( splitted[2] ),
-                                Integer.parseInt( splitted[3] ),
-                                Integer.parseInt( splitted[4] )
+                                strSplitted[0],
+                                strSplitted[1],
+                                Integer.parseInt( strSplitted[2] ),
+                                Integer.parseInt( strSplitted[3] ),
+                                Integer.parseInt( strSplitted[4] )
                         ).registerTower( weatherTower );
-                    } catch ( NumberFormatException nfe ) {
-                        System.out.println( "Error: line " + line + ": parameter from 3th to 5th must be integers." );
-                        return;
-                    } catch ( Exception e ) {
-                        System.out.println( "Error: " + e.getMessage() );
+                    } catch ( Exception ex ) {
+                        System.out.println( "Error: " + ex.getMessage() );
                         return;
                     }
                 }
                 line++;
             }
-
             br.close();
-        } catch ( Exception e ) {
-            System.out.println( "Error: " + e.getMessage() );
+        } catch ( Exception ex ) {
+            System.out.println( "Error: " + ex.getMessage() );
             return;
         }
-
-        while ( cycles > 0 ) {
+        while ( cycle > 0 ) {
             weatherTower.changeWeather();
-            cycles--;
+            cycle--;
         }
-
         writer.close();
+        System.out.println( "The simulator worked out pretty good. Check " + resultFile.getName() + "." );
     }
 }
