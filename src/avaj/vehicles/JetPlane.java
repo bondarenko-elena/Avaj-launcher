@@ -13,6 +13,7 @@ public class JetPlane extends Aircraft implements Flyable {
         super( name, coordinates );
     }
 
+    @Override
     public void updateConditions() {
         String weather = weatherTower.getWeather( this.coordinates );
         HashMap<String, String> messages = new HashMap<>();
@@ -46,21 +47,11 @@ public class JetPlane extends Aircraft implements Flyable {
                     coordinates.getHeight() - 7
             );
         }
-
-        if ( this.coordinates.getHeight() < 0 )
-            this.coordinates.setHeight(0);
-        else if (this.coordinates.getHeight() > 100 )
-            this.coordinates.setHeight(100);
-
-        Parser.writer.println( "JetPlane#" + this.name + "(" + this.id + "): " + messages.get(
-                weather.toUpperCase() ) );
-        if ( this.coordinates.getHeight() == 0 ) {
-            Parser.writer.println( "JetPlane#" + this.name + "(" + this.id + "): landing." );
-            this.weatherTower.unregister( this );
-            Parser.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower." );
-        }
+        checkBoundaryValuesOfHeight( this.coordinates );
+        writeResult( weather, weatherTower, messages, this.name, this.id, this, "JetPlane" );
     }
 
+    @Override
     public void registerTower( WeatherTower weatherTower ) {
         this.weatherTower = weatherTower;
         this.weatherTower.register( this );
