@@ -1,6 +1,6 @@
 package avaj.vehicles;
 
-import avaj.Main;
+import avaj.utils.Parser;
 import avaj.weather.Coordinates;
 import avaj.weather.WeatherTower;
 
@@ -52,18 +52,18 @@ public class JetPlane extends Aircraft implements Flyable {
         else if (this.coordinates.getHeight() > 100 )
             this.coordinates.setHeight(100);
 
-        Main.writer.println( "JetPlane#" + this.name + "(" + this.id + "): " + messages.get(
+        Parser.writer.println( "JetPlane#" + this.name + "(" + this.id + "): " + messages.get(
                 weather.toUpperCase() ) );
         if ( this.coordinates.getHeight() == 0 ) {
-            Main.writer.println( "JetPlane#" + this.name + "(" + this.id + "): landing." );
+            Parser.writer.println( "JetPlane#" + this.name + "(" + this.id + "): landing." );
             this.weatherTower.unregister( this );
-            Main.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower." );
+            Parser.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower." );
         }
     }
 
     public void registerTower( WeatherTower weatherTower ) {
         this.weatherTower = weatherTower;
         this.weatherTower.register( this );
-        Main.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " registered to weather tower." );
+        Parser.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " registered to weather tower." );
     }
 }
