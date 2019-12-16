@@ -17,32 +17,36 @@ public class Baloon extends Aircraft implements Flyable {
     @Override
     public void updateConditions() {
         String weather = weatherTower.getWeather( this.coordinates );
-        HashMap<String, String> messages =  WeatherProvider.getWeatherMessages();
-
-        if ( weather.toLowerCase().equals( "sun" ) ) {
-            this.coordinates = new Coordinates(
-                    coordinates.getLongitude() + 2,
-                    coordinates.getLatitude(),
-                    coordinates.getHeight() + 4
-            );
-        } else if ( weather.toLowerCase().equals( "rain" ) ) {
-            this.coordinates = new Coordinates(
-                    coordinates.getLongitude(),
-                    coordinates.getLatitude(),
-                    coordinates.getHeight() - 5
-            );
-        } else if ( weather.toLowerCase().equals( "fog" ) ) {
-            this.coordinates = new Coordinates(
-                    coordinates.getLongitude(),
-                    coordinates.getLatitude(),
-                    coordinates.getHeight() - 3
-            );
-        } else if ( weather.toLowerCase().equals( "snow" ) ) {
-            this.coordinates = new Coordinates(
-                    coordinates.getLongitude(),
-                    coordinates.getLatitude(),
-                    coordinates.getHeight() - 15
-            );
+        HashMap<String, String> messages = WeatherProvider.getWeatherMessages();
+        switch ( weather.toLowerCase() ) {
+            case "sun":
+                this.coordinates = new Coordinates(
+                        coordinates.getLongitude() + 2,
+                        coordinates.getLatitude(),
+                        coordinates.getHeight() + 4
+                );
+                break;
+            case "rain":
+                this.coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight() - 5
+                );
+                break;
+            case "fog":
+                this.coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight() - 3
+                );
+                break;
+            case "snow":
+                this.coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight() - 15
+                );
+                break;
         }
         checkBoundaryValuesOfHeight( this.coordinates );
         writeResult( weather, weatherTower, messages, this.name, this.id, this, "Baloon" );
