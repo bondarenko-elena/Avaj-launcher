@@ -10,7 +10,7 @@ public class AircraftFactory {
             int longitude,
             int latitude,
             int height
-    ) throws CustomException { /* ??? */
+    ) throws CustomException {
         Coordinates coordinates = new Coordinates( longitude, latitude, height );
         Flyable toReturn;
         if ( type.toLowerCase().equals( "helicopter" ) ) {
@@ -20,7 +20,6 @@ public class AircraftFactory {
         } else if ( type.toLowerCase().equals( "baloon" ) ) {
             toReturn = new Baloon( name, coordinates );
         } else {
-//            throw new IllegalArgumentException( "Wrong Flyable type:" + type );
             throw new CustomException( "Wrong Flyable type:" + type );
         }
         return toReturn;

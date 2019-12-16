@@ -2,6 +2,7 @@ package avaj.vehicles;
 
 import avaj.utils.Parser;
 import avaj.weather.Coordinates;
+import avaj.weather.WeatherProvider;
 import avaj.weather.WeatherTower;
 
 import java.util.HashMap;
@@ -16,11 +17,7 @@ public class Helicopter extends Aircraft implements Flyable {
     @Override
     public void updateConditions() {
         String weather = weatherTower.getWeather( this.coordinates );
-        HashMap<String, String> messages = new HashMap<>();
-        messages.put( "SUN", "This is hot." );
-        messages.put( "RAIN", "Damn you rain! You messed up my baloon." );
-        messages.put( "FOG", "Oh no! I can't see anything." );
-        messages.put( "SNOW", "My rotor is going to freeze!" );
+        HashMap<String, String> messages = WeatherProvider.getWeatherMessages();
 
         if ( weather.toLowerCase().equals( "sun" ) ) {
             this.coordinates = new Coordinates(

@@ -9,131 +9,131 @@ Tower says: JetPlane#J2(8) registered to weather tower.
 Tower says: Helicopter#H4(9) registered to weather tower.
 Baloon#B1(1): Oh no! I can't see anything.
 Baloon#B2(2): It's snowing. We're gonna crash.
-JetPlane#J1(3): OMG! Winter is coming!
-Helicopter#H1(4): My rotor is going to freeze!
-Helicopter#H2(5): My rotor is going to freeze!
+JetPlane#J1(3): It's snowing. We're gonna crash.
+Helicopter#H1(4): It's snowing. We're gonna crash.
+Helicopter#H2(5): It's snowing. We're gonna crash.
 Helicopter#H3(6): Oh no! I can't see anything.
 Baloon#B3(7): Let's enjoy the good weather and take some pics.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): Damn you rain! You messed up my baloon.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): It's raining. Better watch out for lightings.
 Baloon#B1(1): Let's enjoy the good weather and take some pics.
-Baloon#B2(2): Damn you rain! You messed up my baloon.
+Baloon#B2(2): It's raining. Better watch out for lightings.
 JetPlane#J1(3): It's raining. Better watch out for lightings.
-Helicopter#H1(4): My rotor is going to freeze!
+Helicopter#H1(4): It's snowing. We're gonna crash.
 Helicopter#H1(4): landing.
 Tower says: Helicopter#H1(4) unregistered from weather tower.
-Helicopter#H3(6): This is hot.
-Baloon#B3(7): Damn you rain! You messed up my baloon.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+Baloon#B3(7): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
 Helicopter#H4(9): Oh no! I can't see anything.
-Baloon#B1(1): Damn you rain! You messed up my baloon.
+Baloon#B1(1): It's raining. Better watch out for lightings.
 Baloon#B2(2): It's snowing. We're gonna crash.
 JetPlane#J1(3): Oh no! I can't see anything.
-Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H2(5): It's snowing. We're gonna crash.
 Helicopter#H3(6): Oh no! I can't see anything.
 Baloon#B3(7): It's snowing. We're gonna crash.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
 Baloon#B1(1): It's snowing. We're gonna crash.
-Baloon#B2(2): Damn you rain! You messed up my baloon.
-JetPlane#J1(3): This is hot.
-Helicopter#H2(5): My rotor is going to freeze!
-Helicopter#H3(6): This is hot.
-Baloon#B3(7): Damn you rain! You messed up my baloon.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-Baloon#B1(1): Damn you rain! You messed up my baloon.
+Baloon#B2(2): It's raining. Better watch out for lightings.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H2(5): It's snowing. We're gonna crash.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+Baloon#B3(7): It's raining. Better watch out for lightings.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+Baloon#B1(1): It's raining. Better watch out for lightings.
 Baloon#B1(1): landing.
 Tower says: Baloon#B1(1) unregistered from weather tower.
-JetPlane#J1(3): This is hot.
-Helicopter#H2(5): My rotor is going to freeze!
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H2(5): It's snowing. We're gonna crash.
 Helicopter#H2(5): landing.
 Tower says: Helicopter#H2(5) unregistered from weather tower.
 Baloon#B3(7): It's snowing. We're gonna crash.
 Baloon#B3(7): landing.
 Tower says: Baloon#B3(7) unregistered from weather tower.
-Helicopter#H4(9): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
 Baloon#B2(2): It's snowing. We're gonna crash.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-Baloon#B2(2): Damn you rain! You messed up my baloon.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+Baloon#B2(2): It's raining. Better watch out for lightings.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
 Baloon#B2(2): It's snowing. We're gonna crash.
 Baloon#B2(2): landing.
 Tower says: Baloon#B2(2) unregistered from weather tower.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): This is hot.
-JetPlane#J2(8): This is hot.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
-Helicopter#H3(6): Damn you rain! You messed up my baloon.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): Let's enjoy the good weather and take some pics.
+JetPlane#J2(8): Let's enjoy the good weather and take some pics.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
 JetPlane#J2(8): It's raining. Better watch out for lightings.
-Helicopter#H4(9): This is hot.
-JetPlane#J1(3): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.
+JetPlane#J1(3): Let's enjoy the good weather and take some pics.
 Helicopter#H3(6): Oh no! I can't see anything.
 JetPlane#J2(8): Oh no! I can't see anything.
-Helicopter#H4(9): This is hot.
+Helicopter#H4(9): Let's enjoy the good weather and take some pics.

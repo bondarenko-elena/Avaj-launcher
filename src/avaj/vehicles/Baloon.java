@@ -2,6 +2,7 @@ package avaj.vehicles;
 
 import avaj.utils.Parser;
 import avaj.weather.Coordinates;
+import avaj.weather.WeatherProvider;
 import avaj.weather.WeatherTower;
 
 import java.util.HashMap;
@@ -16,34 +17,30 @@ public class Baloon extends Aircraft implements Flyable {
     @Override
     public void updateConditions() {
         String weather = weatherTower.getWeather( this.coordinates );
-        HashMap<String, String> messages = new HashMap<>();
-        messages.put( "SUN", "Let's enjoy the good weather and take some pics." );
-        messages.put( "RAIN", "Damn you rain! You messed up my baloon." );
-        messages.put( "FOG", "Oh no! I can't see anything." );
-        messages.put( "SNOW", "It's snowing. We're gonna crash." );
+        HashMap<String, String> messages =  WeatherProvider.getWeatherMessages();
 
         if ( weather.toLowerCase().equals( "sun" ) ) {
             this.coordinates = new Coordinates(
                     coordinates.getLongitude() + 2,
-                    coordinates.getLatitude() + 0,
+                    coordinates.getLatitude(),
                     coordinates.getHeight() + 4
             );
         } else if ( weather.toLowerCase().equals( "rain" ) ) {
             this.coordinates = new Coordinates(
-                    coordinates.getLongitude() + 0,
-                    coordinates.getLatitude() + 0,
+                    coordinates.getLongitude(),
+                    coordinates.getLatitude(),
                     coordinates.getHeight() - 5
             );
         } else if ( weather.toLowerCase().equals( "fog" ) ) {
             this.coordinates = new Coordinates(
-                    coordinates.getLongitude() + 0,
-                    coordinates.getLatitude() + 0,
+                    coordinates.getLongitude(),
+                    coordinates.getLatitude(),
                     coordinates.getHeight() - 3
             );
         } else if ( weather.toLowerCase().equals( "snow" ) ) {
             this.coordinates = new Coordinates(
-                    coordinates.getLongitude() + 0,
-                    coordinates.getLatitude() + 0,
+                    coordinates.getLongitude(),
+                    coordinates.getLatitude(),
                     coordinates.getHeight() - 15
             );
         }
