@@ -53,7 +53,7 @@ public class JetPlane extends Aircraft implements Flyable {
     }
 
     @Override
-    public void registerTower( WeatherTower weatherTower ) {
+    public void registerrTower( WeatherTower weatherTower ) {
         this.weatherTower = weatherTower;
         this.weatherTower.register( this );
         Parser.writer.println( "Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " registered to weather tower." );

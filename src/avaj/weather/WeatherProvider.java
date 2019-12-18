@@ -15,19 +15,21 @@ public class WeatherProvider {
     }
 
     public static WeatherProvider getProvider() {
-        return WeatherProvider.weatherProvider;
+        WeatherProvider toReturn = WeatherProvider.weatherProvider;
+        return toReturn;
     }
 
     public String getCurrentWeather( Coordinates coordinates ) {
-        return weather[( coordinates.getLongitude() + coordinates.getLatitude() + coordinates.getHeight() ) % 4];
+        String toReturn = weather[( coordinates.getLongitude() + coordinates.getLatitude() + coordinates.getHeight() ) % 4];
+        return toReturn;
     }
 
     public static HashMap<String, String> getWeatherMessages() {
-        HashMap<String, String> messages = new HashMap<>();
-        messages.put( "SUN", "Let's enjoy the good weather and take some pics." );
-        messages.put( "RAIN", "It's raining. Better watch out for lightings." );
-        messages.put( "FOG", "Oh no! I can't see anything." );
-        messages.put( "SNOW", "It's snowing. We're gonna crash." );
-        return messages;
+        HashMap<String, String> toReturn = new HashMap<>();
+        toReturn.put( "SUN", "It is sunny." );
+        toReturn.put( "RAIN", "It is rainy." );
+        toReturn.put( "FOG", "It is foggy." );
+        toReturn.put( "SNOW", "It is snowy." );
+        return toReturn;
     }
 }

@@ -61,7 +61,7 @@ public class Parser {
                                 Integer.parseInt( strSplitted[2] ),
                                 Integer.parseInt( strSplitted[3] ),
                                 Integer.parseInt( strSplitted[4] )
-                        ).registerTower( weatherTower );
+                        ).registerrTower( weatherTower );
                     } catch ( Exception ex ) {
                         System.out.println( "Error: " + ex.getMessage() );
                         return;

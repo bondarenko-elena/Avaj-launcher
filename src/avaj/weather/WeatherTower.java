@@ -3,7 +3,8 @@ package avaj.weather;
 public class WeatherTower extends Tower {
 
     public String getWeather( Coordinates coordinates ) {
-        return WeatherProvider.getProvider().getCurrentWeather( coordinates );
+        String toReturn = WeatherProvider.getProvider().getCurrentWeather( coordinates );
+        return toReturn;
     }
 
     public void changeWeather() {

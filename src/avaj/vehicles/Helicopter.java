@@ -53,7 +53,7 @@ public class Helicopter extends Aircraft implements Flyable {
     }
 
     @Override
-    public void registerTower( WeatherTower weatherTower ) {
+    public void registerrTower( WeatherTower weatherTower ) {
         this.weatherTower = weatherTower;
         this.weatherTower.register( this );
         Parser.writer.println( "Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " registered to weather tower." );
