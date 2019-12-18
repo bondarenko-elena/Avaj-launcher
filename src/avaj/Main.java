@@ -13,6 +13,6 @@ public class Main {
         }
         Parser parser = new Parser( args[0] );
         parser.createResultFile();
-        parser.parseScenario();
+        parser.readScenario();
     }
 }
